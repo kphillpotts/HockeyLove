@@ -13,7 +13,7 @@ namespace HockeyLove
         {
             InitializeComponent();
 
-            MainPage = new HockeyLove.MainPage();
+            MainPage = new NavigationPage(new HockeyLove.MainPage());
         }
 
         protected override void OnStart()

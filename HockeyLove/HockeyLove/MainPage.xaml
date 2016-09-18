@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HockeyLove"
-             x:Class="HockeyLove.MainPage">
+             x:Class="HockeyLove.MainPage"
+             Title="HockeyApp Love">
 
   <StackLayout Padding="20" Spacing="20">
     <Button Text="Feature A" BackgroundColor="#00FF00"/>
