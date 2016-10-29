@@ -16,6 +16,9 @@ namespace HockeyLove
             MainPage = new NavigationPage(new HockeyLove.MainPage());
         }
 
+        
+
+
         protected override void OnStart()
         {
             // Handle when your app starts

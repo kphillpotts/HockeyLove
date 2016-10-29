@@ -6,10 +6,12 @@
              Title="HockeyApp Love">
 
   <StackLayout Padding="20" Spacing="20">
-    <Button Text="Feature A" BackgroundColor="#00FF00"/>
-    <Button Text="Feedback" BackgroundColor="#0000FF"/>
-    <Button Text="Caught Exception" BackgroundColor="#FF0000"/>
-    <Button Text="Unhandled Exception" BackgroundColor="#FF0000"/>
-  </StackLayout>
+    <Button x:Name="FeatureAButton" Text="Feature A" BackgroundColor="#00FF00" Clicked="FeatureAButton_Clicked"/>
+    <Button x:Name="FeatureBButton" Text="Feedback" BackgroundColor="#0000FF" Clicked="FeatureBButton_Clicked"/>
+        <Entry x:Name="FeatureBEntry" Placeholder="Enter FeatureB text"/>
+        <Button x:Name="TrackExceptionButton" Text="Caught Exception" BackgroundColor="#FF0000" Clicked="TrackExceptionButton_Clicked"/>
+    <Button x:Name="UnhandledExceptionButton" Text="Unhandled Exception" BackgroundColor="#FF0000" Clicked="UnhandledExceptionButton_Clicked"/>
+        <Button x:Name="GiveFeedbackButton" Text="Give Feedback" BackgroundColor="#FF0000" Clicked="GiveFeedbackButton_Clicked"/>
+    </StackLayout>
   
 </ContentPage>
