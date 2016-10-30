@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using HockeyApp.iOS;
 using UIKit;
 
 namespace HockeyLove.iOS
@@ -22,10 +23,22 @@ namespace HockeyLove.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            InitializeHockeyApp(Constants.HockeyappConstants.HockeyAppId_iOS);
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        void InitializeHockeyApp(string iOSHockeyAppID)
+        {
+            var manager = BITHockeyManager.SharedHockeyManager;
+            manager.Configure(iOSHockeyAppID);
+            manager.LogLevel = BITLogLevel.Debug;
+            manager.StartManager();
+            manager.Authenticator.AuthenticateInstallation();
+            manager.UpdateManager.CheckForUpdate();
         }
     }
 }

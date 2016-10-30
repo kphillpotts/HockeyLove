@@ -12,7 +12,7 @@ namespace HockeyLove.Constants
 
         #region AppID
 
-        public const string HockeyAppId_iOS = "";
+        public const string HockeyAppId_iOS = "14855c7e8e7643b697fda9437645e140";
 
         public const string HockeyAppId_Droid = "be1f933a9d2040bb8e7d2c9a58b63a11";
 
